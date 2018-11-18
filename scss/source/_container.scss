@@ -6,7 +6,7 @@
     }
 
     li {
-      @extend h2;
+      @extend h3;
       pointer-events: none;
 
     }
@@ -21,7 +21,7 @@
 
     .divider {
       padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding-bottom: 0.8em;
       color: $colorDarkGrey;
     }
   }
@@ -60,8 +60,10 @@
       width: 60vw;
       //height: auto;
       padding: 2em;
+      padding-top: 0em;
       //margin: 4em;
       margin-left: 20vw;
+      padding-bottom: 8em;
       //margin-right: 10em;
 
 
@@ -72,7 +74,8 @@
         background-color: $colorWhite;
         box-shadow: $main-shadow;
         border-color: $colorDarkGrey;
-        border-width: 1px;
+        border-width: 2px;
+        border-style: inset;
 
       }
 
