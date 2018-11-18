@@ -40,13 +40,16 @@
 
     &.slide-customers {
       transform: translateX(0vw);
+
     }
     &.slide-payment {
       transform: translateX(-80vw);
+
     }
 
     &.slide-settings {
         transform: translateX(-160vw);
+
     }
     transition: all 0.5s ease-in-out ;
 
@@ -62,14 +65,14 @@
       padding: 2em;
       padding-top: 0em;
       //margin: 4em;
-      margin-left: 20vw;
+      margin-left: 20%;
       padding-bottom: 8em;
       //margin-right: 10em;
 
 
       .section {
         height: 100%;
-        max-width: 1140px;
+        //max-width: 1140px;
         width: 100vw;
         background-color: $colorWhite;
         box-shadow: $main-shadow;
@@ -80,9 +83,21 @@
       }
 
     }
-    .card-content > div:target {
-    transform: scale(0.8);
+
   }
+}
+
+@each $name, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+  //  .card-flex {
+//      .card-content {
+        .section {
+            max-width: map-get($container-max-widths, $name) !important;
+        }
+    //  }
+
+    //}
+
   }
   .consumer-container {
     padding: 5%;
