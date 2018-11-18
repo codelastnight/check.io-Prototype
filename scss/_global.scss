@@ -22,7 +22,12 @@ body {
          scroll-snap-type: mandatory;
 }
 
-
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
 
 .online-indicator {
   width: 0.8em;
