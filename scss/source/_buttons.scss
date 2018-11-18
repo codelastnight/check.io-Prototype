@@ -1,0 +1,12 @@
+.btn-transparent {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  padding: 0;
+
+  &:hover {
+    color: $colorHighlight;
+    outline: none;
+  }
+}
