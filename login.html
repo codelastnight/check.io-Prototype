@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Check.io</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css" />
 </head>
-<body>
-<div class="container">
+
+<body class="login-body">
   <nav class="footer navbar navbar-big fixed-top" style="background: transparent;">
     <a class="navbar-brand" href="#">Check.io</a>
   </nav>
+  <div class="container-fluid login-view">
 
-  <div class="login">
-    <h1>Login</h1>
     <div class="row">
-      <input type="text" placeholder="Username" required>
+      <div class="col-sm-6">
+
+        <div class="login">
+          <h1>Sign In</h1>
+          <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Email address</label> -->
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleInputPassword1">Password</label> -->
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <a href="#" class="btn btn-transparent-b">
+            <h2>Login</h2>
+          </a>
+          <p>Don't have an account? <a href='#'>Sign Up</a></p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+
+        <div class="login">
+          <h1>Sign up</h1>
+          <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Email address</label> -->
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Email address</label> -->
+            <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Full Name">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Email address</label> -->
+            <input type="location" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Location">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleInputPassword1">Password</label> -->
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <a href="#" class="btn btn-transparent-b">
+            <h2>Register</h2>
+          </a>
+          <p>Already have an account? <a href='#'>Sign In</a></p>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <input type="password" placeholder="Password" required>
-    </div>
-    <a href="#"><h2>Login</h2></a>
-    <p>Don't have an account? <a href='#'>Sign Up</a></p>
+    <nav class="footer navbar navbar-big fixed-bottom" style="background: transparent;">
+      <p class="grey">Copyright Big Peen Boys MMXVIII</p>
+    </nav>
   </div>
-
-  <nav class="footer navbar navbar-big fixed-bottom" style="background: transparent;">
-    <p class="grey">Copyright Big Peen Boys MMXVIII</p>
-  </nav>
-</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>

@@ -35,7 +35,17 @@
   background-color: transparent;
   color: $colorSuperDarkGrey;
   &:hover {
-
+      opacity: 1;
       color: $colorHighlight;
+  }
+}
+.btn-transparent-b {
+  background-color: transparent;
+  color: $colorHighlight;
+  margin-bottom: 1em;
+  &:hover {
+    opacity: 1;
+    background-color: $colorHighlight;
+      color: $colorWhite;
   }
 }
