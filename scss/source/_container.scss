@@ -96,6 +96,7 @@
   white-space: nowrap;
   position: relative;
   color: $colorDarkGrey;
+
   .icon{
   position: absolute;
   top: 50%;
@@ -105,6 +106,7 @@
   color: #4f5b66;
 }
   [type=search] {
+    background-color: $colorLightGrey;
     border-width: 1px;
     border-style: solid;
     border-color: $colorDarkGrey;
