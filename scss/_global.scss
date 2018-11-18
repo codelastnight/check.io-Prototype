@@ -6,21 +6,30 @@ body {
   overflow: hidden;
   display: flex;
   flex-flow: column;
+  height: 100vh;
+  background-color: $colorWhite;
 }
 
 
-@mixin user-select($property) {
-  -webkit-user-select: $property; /* Safari */
-  -moz-user-select: $property; /* Firefox */
-  -ms-user-select: $property; /* IE10+/Edge */
-  user-select: $property;
+@mixin scroll-snap($property) {
+  -webkit-scroll-snap-points-x: repeat($property);
+     -ms-scroll-snap-points-x: repeat($property);
+         scroll-snap-points-x: repeat($property);
+ -webkit-scroll-snap-type: mandatory;
+     -ms-scroll-snap-type: mandatory;
+         scroll-snap-type: mandatory;
 }
 
-  
+
+
 .online-indicator {
   width: 0.8em;
   height: 0.8em;
   background-color: $colorHighlight;
   border-radius: 10px;
   margin: auto 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

@@ -1,17 +1,17 @@
-.container-card {
-  flex: 1;
-
-  .nav {
+.main-nav {
+  .nav-pills {
     a {
       @extend .block-link;
       pointer-events: auto;
     }
 
     li {
+      @extend h2;
       pointer-events: none;
+
     }
 
-    [aria-selected=true] {
+    .active {
       background-color: transparent;
       color: $colorBlack;
       pointer-events: none;
@@ -22,16 +22,37 @@
     .divider {
       padding-top: 0.5em;
       padding-bottom: 0.5em;
+      color: $colorDarkGrey;
     }
+  }
 
-    .card-flex {
-      flex-direction: row;
-      overflow-x: hidden;
+}
 
-      .card-content {
-        width: 300px;
-        flex-shrink: 0;
-        height: 100%;
+.container-card {
+  flex: 2;
+  overflow-y: auto;
+  .card-flex {
+    flex-direction: row;
+    overflow-x: auto;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    @include scroll-snap(80vw);
+    .card-content {
+      flex-shrink: 0;
+      height: 100%;
+
+      //height: auto;
+      padding: 2em;
+      //margin: 4em;
+
+      .section {
+        max-width: 1140px;
+        width: 100vw;
+        background-color: $colorWhite;
+        box-shadow: $main-shadow;
+        border-color: $colorDarkGrey;
+        border-width: 1px;
+
       }
     }
   }
