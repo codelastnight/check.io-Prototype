@@ -100,7 +100,11 @@
 //     //}
 //
 //   }
-
+.search {
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: $colorDarkGrey;
+}
   .consumer-container {
     height: 100%;
     padding: 2em;
