@@ -6,7 +6,7 @@
     }
 
     li {
-      @extend h2;
+      @extend h3;
       pointer-events: none;
 
     }
@@ -21,7 +21,7 @@
 
     .divider {
       padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding-bottom: 0.8em;
       color: $colorDarkGrey;
     }
   }

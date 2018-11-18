@@ -27,6 +27,9 @@ h4 {
 	font-size: 1.125em;
 	font-weight: bold;
 }
+p {
+	font-size: 0.8em;
+}
 
 a {
 	font-size: 0.75;
@@ -36,7 +39,7 @@ a {
 	&:hover {
 		opacity: 0.8;
 		text-decoration: none;
-
+		color: $colorHighlight;
 	}
 }
 
@@ -47,4 +50,7 @@ a {
 		color: $colorHighlight;
 
 	}
+}
+.accent {
+  color: $colorHighlight;
 }
