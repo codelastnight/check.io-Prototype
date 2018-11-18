@@ -9,4 +9,33 @@
     color: $colorHighlight;
     outline: none;
   }
+  i {
+    padding-right: 0.1em;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  @include transition(all);
+}
+
+.btn-brand {
+  background-color: $colorHighlight;
+  color: $colorWhite;
+  border-width: 1px;
+  border-color: $colorHighlight;
+  font-weight: $font-black;
+
+  &:hover {
+    background-color: $colorWhite;
+      color: $colorHighlight;
+  }
+}
+.btn-transparent-a {
+  background-color: transparent;
+  color: $colorSuperDarkGrey;
+  &:hover {
+
+      color: $colorHighlight;
+  }
 }

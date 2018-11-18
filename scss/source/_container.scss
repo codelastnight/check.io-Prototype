@@ -138,11 +138,14 @@
 .consumer-container {
   height: 100%;
   padding: 2em;
-
+  .selected {
+    box-shadow: $main-shadow;
+  }
   .col-name {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+
   }
 
   .div-scroll {

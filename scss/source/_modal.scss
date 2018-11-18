@@ -1,0 +1,11 @@
+.modal-content {
+  background-color: $colorWhite;
+  border-radius: 1px;
+  border-color: $colorDarkGrey;
+  .modal-header {
+    border-width: 0;
+  }
+  .modal-footer {
+    border-width: 0;
+  }
+}
