@@ -36,7 +36,6 @@
     overflow-x: auto;
     display: flex;
     -webkit-overflow-scrolling: touch;
-    @include scroll-snap(80vw);
     .card-content {
       flex-shrink: 0;
       height: 100%;
