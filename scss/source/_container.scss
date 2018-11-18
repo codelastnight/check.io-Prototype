@@ -1,0 +1,38 @@
+.container-card {
+  flex: 1;
+
+  .nav {
+    a {
+      @extend .block-link;
+      pointer-events: auto;
+    }
+
+    li {
+      pointer-events: none;
+    }
+
+    [aria-selected=true] {
+      background-color: transparent;
+      color: $colorBlack;
+      pointer-events: none;
+    }
+
+    [aria-selected=false] {}
+
+    .divider {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
+    .card-flex {
+      flex-direction: row;
+      overflow-x: hidden;
+
+      .card-content {
+        width: 300px;
+        flex-shrink: 0;
+        height: 100%;
+      }
+    }
+  }
+}
