@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700,900');
+
 body {
 	font-size: 16px;
+	font-weight: 500;
 }
 
 h1 {
 	font-size: 3em;
-	font-weight: 900;
+	font-weight: $font-black;
 }
 
 h2 {
 	font-size: 1.5em;
-	font-weight: 900;
+	font-weight: $font-black;
 }
 
 h3 {
 	font-size: 1.125em;
-	font-weight: 900;
+	font-weight: $font-black;
 }
 
 h4 {
@@ -25,4 +28,20 @@ h4 {
 a {
 	font-size: 0.75;
 	color: $colorHighlight;
+	@include transition(all);
+
+	&:hover {
+		opacity: 0.8;
+		text-decoration: none;
+
+	}
+}
+
+.block-link {
+	font-weight: $font-black;
+	color: $colorSuperDarkGrey;
+	&:hover {
+		color: $colorHighlight;
+
+	}
 }
