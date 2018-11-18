@@ -10,7 +10,7 @@ body {
   flex-flow: column;
   height: 100vh;
   background-color: $colorWhite;
-  padding-top: 7em;
+  padding-top: 6.5em;
 }
 
 
@@ -40,13 +40,4 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-.login {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display:block;
 }
