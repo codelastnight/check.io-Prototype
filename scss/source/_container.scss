@@ -8,7 +8,6 @@
     li {
       @extend h3;
       pointer-events: none;
-
     }
 
     .active {
@@ -25,69 +24,58 @@
       color: $colorDarkGrey;
     }
   }
-
 }
+
 .carousel {
   flex: 2;
 }
+
 .container-card {
   padding-bottom: 10em;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100%;
-
-
-    //height: 100%;
-    //flex-direction: row;
-
-    // &.slide-customers {
-    //   transform: translateX(0vw);
-    //
-    // }
-    // &.slide-payment {
-    //   transform: translateX(-80vw);
-    //
-    // }
-    //
-    // &.slide-settings {
-    //     transform: translateX(-160vw);
-    //
-    // }
-
-    //-webkit-overflow-scrolling: touch;
-
-    .card-content {
-      //flex-shrink: 0;
+  //height: 100%;
+  //flex-direction: row;
+  // &.slide-customers {
+  //   transform: translateX(0vw);
+  //
+  // }
+  // &.slide-payment {
+  //   transform: translateX(-80vw);
+  //
+  // }
+  //
+  // &.slide-settings {
+  //     transform: translateX(-160vw);
+  //
+  // }
+  //-webkit-overflow-scrolling: touch;
+  .card-content {
+    //flex-shrink: 0;
+    height: 100%;
+    //width: 100vw;
+    //height: auto;
+    //padding: 2em;
+    //padding-top: 0em;
+    //margin: 4em;
+    //margin-left: 20%;
+    //padding-bottom: 8em;
+    //margin-right: 10em;
+    .section {
       height: 100%;
+      //max-width: 1140px;
       //width: 100vw;
-      //height: auto;
-      //padding: 2em;
-      //padding-top: 0em;
-      //margin: 4em;
-      //margin-left: 20%;
-      //padding-bottom: 8em;
-      //margin-right: 10em;
-
-
-      .section {
-        height: 100%;
-        //max-width: 1140px;
-        //width: 100vw;
-        //margin-bottom: 7em;
-        background-color: $colorWhite;
-        box-shadow: $main-shadow;
-        border-color: $colorDarkGrey;
-        border-width: 2px;
-        border-style: inset;
-        overflow-y: hidden;
-
-      }
-
-
-
+      //margin-bottom: 7em;
+      background-color: $colorWhite;
+      box-shadow: $main-shadow;
+      border-color: $colorDarkGrey;
+      border-width: 2px;
+      border-style: inset;
+      overflow-y: hidden;
+    }
   }
 }
-
 // @each $name, $value in $grid-breakpoints {
 //   @media (min-width: $value) {
 //   //  .card-flex {
@@ -100,59 +88,99 @@
 //     //}
 //
 //   }
+
 .search {
-  border-radius: 50%;
-  border-width: 1px;
-  border-color: $colorDarkGrey;
+
+  //border-style: inset;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  color: $colorDarkGrey;
+  .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: -18px;
+  z-index: 1;
+  color: #4f5b66;
 }
-  .consumer-container {
-    height: 100%;
-    padding: 2em;
-    .col-name {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .div-scroll {
-      height: 90%;
-      overflow-y: scroll;
-      //margin-bottom: 1em;
-      justify-content: flex-start;
-      overflow-x: hidden;
+  [type=search] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $colorDarkGrey;
+    width: 100%;
+    height: 40px;
+    //border: none;
+    //float: left;
+    //color: #63717f;
+    @include transition(all);
+    padding-left: 45px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: $colorBlack;
 
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $colorBlack;
     }
-    .search {
-      padding-bottom: 1em;
-    }
-    .overlap {
+    &:focus {
+    outline: none;
+    border-color: $colorHighlight;
+}
+  }
+}
+
+.consumer-container {
+  height: 100%;
+  padding: 2em;
+
+  .col-name {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .div-scroll {
+    height: 90%;
+    overflow-y: scroll;
+    //margin-bottom: 1em;
+    justify-content: flex-start;
+    overflow-x: hidden;
+  }
+
+  .search {
+    padding-bottom: 1em;
+  }
+
+  .overlap {
     //  height: 100%;
-      overflow: hidden;
-      //margin-top: 1em;
+    overflow: hidden;
+    //margin-top: 1em;
+  }
+
+  .person {
+    display: inline-flex;
+    align-items: center;
+
+    h3 {
+      padding-left: 1em;
+      margin-bottom: 0;
     }
+    padding: 0.1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
-
-    .person {
-      display: inline-flex;
-      align-items: center;
-
-      h3 {
-        padding-left: 1em;
-        margin-bottom: 0;
-      }
-      padding: 0.1em;
-      margin-top: 1em;
-      margin-bottom:1em;
-
-      .icon {
-        width: 2em;
-        height: 2em;
-        background-color: $colorHighlight;
-        border-radius: 50%;
-        margin: auto 0;
-      }
-
-    }
-    .align-right {
-
+    .icon {
+      width: 2em;
+      height: 2em;
+      background-color: $colorHighlight;
+      border-radius: 50%;
+      margin: auto 0;
     }
   }
+
+  .align-right {}
+}
