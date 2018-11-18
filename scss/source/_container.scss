@@ -79,6 +79,7 @@
         border-color: $colorDarkGrey;
         border-width: 2px;
         border-style: inset;
+        //overflow-y: hidden;
 
       }
 
@@ -99,17 +100,56 @@
     //}
 
   }
+
   .consumer-container {
-    padding: 5%;
+    height: 100%;
+    padding: 2em;
+    .col-name {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .div-scroll {
+      height: 90%;
+      overflow-y: scroll;
+      //margin-bottom: 1em;
+      justify-content: flex-start;
+      overflow-x: hidden;
+
+    }
+    .search {
+      margin-bottom: 1em;
+    }
+    .overlap {
+    //  height: 100%;
+      overflow: hidden;
+      //margin-top: 1em;
+    }
+
+
     .person {
       display: inline-flex;
+      align-items: center;
+
+      h3 {
+        padding-left: 1em;
+        margin-bottom: 0;
+      }
+      padding: 0.1em;
+      margin-top: 1em;
+      margin-bottom:1em;
+
       .icon {
-        width: 1em;
-        height: 1em;
+        width: 2em;
+        height: 2em;
         background-color: $colorHighlight;
         border-radius: 50%;
         margin: auto 0;
       }
+
+    }
+    .align-right {
+
     }
   }
 

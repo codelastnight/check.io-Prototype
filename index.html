@@ -9,151 +9,197 @@
 
 <body>
 
-<nav class="navbar navbar-big" style="background: transparent;">
-  <div class="header-info">
-    <div class="navbar-brand">Business Name</div>
-    <div class="online-indicator"></div>
+  <nav class="navbar navbar-big" style="background: transparent;">
+    <div class="header-info">
+      <div class="navbar-brand">Business Name</div>
+      <div class="online-indicator"></div>
+    </div>
+    <a class="block-link" href="">Logout</a>
+  </nav>
+
+  <div class="container main-nav">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-customer-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Customer</a>
+      </li>
+      <li class="divider">
+        /
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-payment-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Payment</a>
+      </li>
+      <li class="divider">
+        /
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Settings</a>
+      </li>
+    </ul>
   </div>
-  <a class="block-link" href="">Logout</a>
-</nav>
 
-<div class="container main-nav">
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="pills-customer-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Customer</a>
-    </li>
-    <li class="divider">
-      /
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-payment-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Payment</a>
-    </li>
-    <li class="divider">
-      /
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Settings</a>
-    </li>
-  </ul>
-</div>
+  <div class="container-card">
+    <div class="card-flex tab-content">
+      <div class="card-content " id="pills-hxome" role="tabpanel">
+        <div class="section border">
+          <div class="container-fluid ">
 
-<div class="container-card">
-  <div class="card-flex tab-content">
-    <div class="card-content " id="pills-hxome" role="tabpanel" >
-      <div class="section border">
-        <div class="consumer-container">
-          <input type="text" placeholder="Search..">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col align-left">
-                  <h2>Nearby</h2>
-                </div>
-                <div class="col align-right">
-                  <button>Add Name</button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
-                  </div>
-                </div>
-                <div class="col align-right">
-                  <a>Check In</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
-                  </div>
-                </div>
-                <div class="col align-right">
-                  <a>Check In</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
-                  </div>
-                </div>
-                <div class="col align-right">
-                  <a>Check In</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
-                  </div>
-                </div>
-                <div class="col align-right">
-                  <a>Check In</a>
-                </div>
+          <div class="consumer-container">
+            <div class="row search">
+              <div class="col">
+                <input type="text" placeholder="Search..">
               </div>
             </div>
-            <div class="col">
-              <div class="row">
-                <div class="col align-left">
-                  <h2>Checked In</h2>
-                </div>
-                <div class="col align-right">
-                  <p>Ocupancy: 15/20</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
+            <div class="row overlap">
+
+
+              <div class="col ">
+
+                <div class="row">
+                  <div class="col col-name">
+                    <h2>Nearby</h2>
+                    <button>Add Name</button>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
+                <div class=" row div-scroll">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
+
               </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
+              <div class="col">
+                <div class="row">
+                  <div class="col col-name">
+                    <h2>Checked In</h2>
+                    <h4>Ocupancy: 15/20</h4>
                   </div>
+
+
+
                 </div>
-              </div>
-              <div class="row">
-                <div class="col align-left">
-                  <div class="person">
-                    <div class="icon"></div>
-                    <h3>Full Name</h3>
+                <div class=" row div-scroll">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+
+                      <div class="col-12 col-name">
+                        <div class="person">
+                          <div class="icon"></div>
+                          <h3>Full Name</h3>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
+        </div>
+      </div>
+      <div class=" card-content " id="pills-profile" role="tabpanel">
+        <div class="section  border">..a.</div>
+      </div>
+      <div class=" card-content " id="pills-contact" role="tabpanel">
+        <div class="section border">..a.</div>
       </div>
     </div>
-    <div class=" card-content " id="pills-profile" role="tabpanel"><div class="section  border">..a.</div></div>
-    <div class=" card-content " id="pills-contact" role="tabpanel" ><div class="section border">..a.</div></div>
   </div>
-</div>
 
-<nav class="footer navbar navbar-big fixed-bottom" style="background: transparent;">
-  <p class="grey">Copyright Big Peen Boys MMXVIII</p>
-  <p>Made with <span class="accent">❤</span> at Hacksgiving 2018</p>
-  <p class="grey">Need help? <a class="accent" href="#">Contact Us</a></p>
-</nav>
+  <nav class="footer navbar navbar-big fixed-bottom" style="background: transparent;">
+    <p class="grey">Copyright Big Peen Boys MMXVIII</p>
+    <p>Made with <span class="accent">❤</span> at Hacksgiving 2018</p>
+    <p class="grey">Need help? <a class="accent" href="#">Contact Us</a></p>
+  </nav>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -176,4 +222,5 @@
     }).addClass("slide-settings");
   });
 </script>
+
 </html>
