@@ -1,6 +1,20 @@
 .login-body {
   padding-top: 2em;
 }
+.animate-div {
+  width: 50%;
+  height: 150vh;
+  position: absolute;
+  left: 50%;
+  background-color: $colorHighlight;
+  top: -2em;
+  z-index: 100;
+  @include transition(left);
+}
+
+.signup {
+  left: 0%;
+}
 
 .login-view {
 
