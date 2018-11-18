@@ -31,20 +31,42 @@
 .container-card {
   flex: 2;
   overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+
   .card-flex {
+    height: 100%;
     flex-direction: row;
-    overflow-x: auto;
+
+    &.slide-customers {
+      transform: translateX(0vw);
+    }
+    &.slide-payment {
+      transform: translateX(-80vw);
+    }
+
+    &.slide-settings {
+        transform: translateX(-160vw);
+    }
+    transition: all 0.5s ease-in-out ;
+
     display: flex;
-    -webkit-overflow-scrolling: touch;
+    align-items: center;
+    //-webkit-overflow-scrolling: touch;
+
     .card-content {
       flex-shrink: 0;
       height: 100%;
-
+      width: 60vw;
       //height: auto;
       padding: 2em;
       //margin: 4em;
+      margin-left: 20vw;
+      //margin-right: 10em;
+
 
       .section {
+        height: 100%;
         max-width: 1140px;
         width: 100vw;
         background-color: $colorWhite;
@@ -53,6 +75,10 @@
         border-width: 1px;
 
       }
+
     }
+    .card-content > div:target {
+    transform: scale(0.8);
+  }
   }
 }
