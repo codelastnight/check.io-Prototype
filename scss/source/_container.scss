@@ -27,79 +27,79 @@
   }
 
 }
-
-.container-card {
+.carousel {
   flex: 2;
-  overflow-y: auto;
+}
+.container-card {
+  padding-bottom: 10em;
+  overflow-y: hidden;
   overflow-x: hidden;
   height: 100%;
 
-  .card-flex {
+
     //height: 100%;
     //flex-direction: row;
 
-    &.slide-customers {
-      transform: translateX(0vw);
+    // &.slide-customers {
+    //   transform: translateX(0vw);
+    //
+    // }
+    // &.slide-payment {
+    //   transform: translateX(-80vw);
+    //
+    // }
+    //
+    // &.slide-settings {
+    //     transform: translateX(-160vw);
+    //
+    // }
 
-    }
-    &.slide-payment {
-      transform: translateX(-80vw);
-
-    }
-
-    &.slide-settings {
-        transform: translateX(-160vw);
-
-    }
-    transition: all 0.5s ease-in-out ;
-
-    display: flex;
-    align-items: center;
     //-webkit-overflow-scrolling: touch;
 
     .card-content {
-      flex-shrink: 0;
+      //flex-shrink: 0;
       height: 100%;
-      width: 100vw;
+      //width: 100vw;
       //height: auto;
-      padding: 2em;
-      padding-top: 0em;
+      //padding: 2em;
+      //padding-top: 0em;
       //margin: 4em;
       //margin-left: 20%;
-      padding-bottom: 8em;
+      //padding-bottom: 8em;
       //margin-right: 10em;
 
 
       .section {
         height: 100%;
         //max-width: 1140px;
-        width: 100vw;
+        //width: 100vw;
+        margin-bottom: 7em;
         background-color: $colorWhite;
         box-shadow: $main-shadow;
         border-color: $colorDarkGrey;
         border-width: 2px;
         border-style: inset;
-        //overflow-y: hidden;
+        overflow-y: hidden;
 
       }
 
-    }
+
 
   }
 }
 
-@each $name, $value in $grid-breakpoints {
-  @media (min-width: $value) {
-  //  .card-flex {
-//      .card-content {
-        .section {
-            max-width: map-get($container-max-widths, $name) !important;
-        }
-    //  }
-
-    //}
-
-  }
+// @each $name, $value in $grid-breakpoints {
+//   @media (min-width: $value) {
+//   //  .card-flex {
+// //      .card-content {
+//         .section {
+//             max-width: map-get($container-max-widths, $name) !important;
+//         }
+//     //  }
+//
+//     //}
+//
+//   }
 
   .consumer-container {
     height: 100%;
@@ -152,5 +152,3 @@
 
     }
   }
-
-}
