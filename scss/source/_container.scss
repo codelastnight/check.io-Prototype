@@ -84,4 +84,18 @@
     transform: scale(0.8);
   }
   }
+  .consumer-container {
+    padding: 5%;
+    .person {
+      display: inline-flex;
+      .icon {
+        width: 1em;
+        height: 1em;
+        background-color: $colorHighlight;
+        border-radius: 50%;
+        margin: auto 0;
+      }
+    }
+  }
+
 }
